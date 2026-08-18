@@ -1,0 +1,17 @@
+# VCS
+.git
+.github
+
+# 依赖：既不进镜像，也不该进构建上下文
+node_modules
+.pnpm-store
+
+# 构建产物（pnpm build 会全部重新生成）
+lib
+dist
+*.tsbuildinfo
+
+# 本地配置/密钥
+.env
+.env.*
+*.local
